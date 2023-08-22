@@ -22,5 +22,6 @@ git remote add upstream repo-directory
 2. merge PR into `dev` branch of production repo.
 3. when `dev` branch is ready to be pushed to `master` branch as a new version, first merge `dev` into `staging/testing`.
 4. do qa testing at `staging/testing` branch.
-5. merge `staging/testing` into `master`.
-6. create new branch with version number matching the current `master`.
+5. archival of new, current version by creating a new `vVersion_Number` branch based off of `staging/testing`
+6. merge `staging/testing` into `master`.
+7. create new branch with version number matching the current `master`.
